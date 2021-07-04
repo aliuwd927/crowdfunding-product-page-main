@@ -209,3 +209,25 @@ a {
   margin-top: -0.75rem;
   font-size: 2rem;
 }
+
+.modal_button1,
+.modal_button2,
+.modal_button3 {
+  height: 48px;
+  width: 157px;
+  position: relative;
+  background-color: #3cb3ab;
+  border-radius: 33.5px;
+  padding: 0.8rem;
+  bottom: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0.9rem;
+}
+
+.modal_button3 {
+  background-color: #2f2f2f;
+  opacity: 0.5;
+}
