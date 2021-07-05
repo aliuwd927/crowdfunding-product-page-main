@@ -234,7 +234,9 @@ a {
 
 /* Modal */
 .modal {
-  height: 1001px;
+  display: none;
+}
+.modal .active {
   width: 730px;
   background-color: #ffffff;
   stroke: rgba(0, 0, 0, 0.0497);
@@ -243,6 +245,9 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  border: 1px solid black;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .modal_content {
@@ -254,8 +259,47 @@ a {
 .modal_content:hover {
   border: 3px solid #3cb3ab;
 }
+
+.modal_content_header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 24px;
+  margin-top: 15%;
+  gap: 15px;
+}
+
+.modal_content_header > label > h4 {
+  width: 100%;
+  display: flex;
+}
+
+.modal_content_header_end {
+  display: flex;
+  flex-direction: row;
+  margin-left: 35%;
+  gap: 2px;
+}
+
+.mche_fix1 {
+  margin-left: 30%;
+}
+
+.mche_fix2 {
+  margin-left: 23%;
+}
+
 .modal_top {
   height: 157px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal_top > p {
+  margin-bottom: 100px;
+  padding: 24px;
 }
 
 .line,
@@ -264,17 +308,29 @@ a {
 }
 
 .money_container /* .active */ {
+  width: 578px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-left: 4%;
   height: 96px;
+}
+
+.money_container > p {
+  align-self: center;
 }
 
 .money {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
 }
+
 .input_amt {
   height: 25%;
+  align-self: center;
 }
 
 .btn_submit {
@@ -287,7 +343,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
   font-family: Commissioner;
   font-style: normal;
   font-weight: bold;
+}
+
+.modal_opaque {
+  opacity: 0.5;
 }

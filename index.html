@@ -177,6 +177,9 @@
           </section>
         </article>
 
+        <!-- Modal Section -->
+        <!-- Modal Section -->
+
         <form class="modal">
           <section class="modal_header">
             <h1>Back This Project</h1>
@@ -187,8 +190,10 @@
           </section>
           <section class="modal_content">
             <div class="modal_top">
-              <input type="radio" name="options" value="Pledge" />
-              <label for="Pledge">Pledge with no reward</label>
+              <div class="modal_content_header">
+                <input type="radio" name="options" value="Pledge" />
+                <label for="Pledge"><h4>Pledge with no reward</h4></label>
+              </div>
               <p>
                 Choose to support us without a reward if you simply believe in
                 our project. As a backer, you will be signed up to receive
@@ -196,20 +201,30 @@
               </p>
             </div>
             <hr class="line" />
-            <div class="money_container" style="display: hidden">
+            <div class="money_container">
+              <p>Enter your pledge</p>
               <div class="money">
-                <p>Enter your pledge</p>
                 <div>$</div>
                 <input type="text" class="input_amt" />
+                <div style="cursor: pointer" class="btn_submit">Continue</div>
               </div>
 
-              <div style="cursor: pointer" class="btn_submit">Continue</div>
+              <!-- <div style="cursor: pointer" class="btn_submit">Continue</div> -->
             </div>
           </section>
           <section class="modal_content">
             <div class="modal_top">
-              <input type="radio" name="options" value="Bamboo Stand" />
-              <label for="Bamboo Stand">Bamboo Stand</label>
+              <div class="modal_content_header">
+                <input type="radio" name="options" value="Bamboo Stand" />
+                <label for="Bamboo Stand"><h4>Bamboo Stand</h4></label>
+                <h4>Pledge $25 or more</h4>
+
+                <div class="modal_content_header_end">
+                  <h4>100</h4>
+                  <p>left</p>
+                </div>
+              </div>
+
               <p>
                 You get an ergonomic stand made of natural bamboo. You've helped
                 us launch our promotional campaign, and you’ll be added to a
@@ -218,19 +233,35 @@
             </div>
             <hr class="line" />
             <div class="money_container">
+              <p>Enter your pledge</p>
               <div class="money">
-                <p>Enter your pledge</p>
                 <div>$</div>
                 <input type="text" class="input_amt" />
+                <div style="cursor: pointer" class="btn_submit">Continue</div>
               </div>
 
-              <div style="cursor: pointer" class="btn_submit">Continue</div>
+              <!-- <div style="cursor: pointer" class="btn_submit">Continue</div> -->
             </div>
           </section>
           <section class="modal_content">
             <div class="modal_top">
-              <input type="radio" name="options" value="Black Edition Stand" />
-              <label for="Black Edition Stand">Black Edition Stand</label>
+              <div class="modal_content_header">
+                <input
+                  type="radio"
+                  name="options"
+                  value="Black Edition Stand"
+                />
+                <label for="Black Edition Stand">
+                  <h4>Black Edition Stand</h4>
+                </label>
+                <h4>Pledge $75 or more</h4>
+
+                <div class="modal_content_header_end mche_fix1">
+                  <h4>64</h4>
+                  <p>left</p>
+                </div>
+              </div>
+
               <p>
                 You get a Black Special Edition computer stand and a personal
                 thank you. You’ll be added to our Backer member list. Shipping
@@ -243,21 +274,30 @@
               <div class="money">
                 <div>$</div>
                 <input type="text" class="input_amt" />
+                <div style="cursor: pointer" class="btn_submit">Continue</div>
               </div>
 
-              <div style="cursor: pointer" class="btn_submit">Continue</div>
+              <!-- <div style="cursor: pointer" class="btn_submit">Continue</div> -->
             </div>
           </section>
-          <section class="modal_content">
+          <section class="modal_content modal_opaque">
             <div class="modal_top">
-              <input
-                type="radio"
-                name="options"
-                value="Mahogany Special Edition"
-              />
-              <label for="Mahogany Special Edition">
-                Mahogany Special Edition
-              </label>
+              <div class="modal_content_header">
+                <input
+                  type="radio"
+                  name="options"
+                  value="Mahogany Special Edition"
+                />
+                <label for="Mahogany Special Edition">
+                  <h4>Mahogany Special Edition</h4>
+                </label>
+                <h4>Pledge $200 or more</h4>
+                <div class="modal_content_header_end mche_fix2">
+                  <h4>0</h4>
+                  <p>left</p>
+                </div>
+              </div>
+
               <p>
                 You get two Special Edition Mahogany stands, a Backer T-Shirt,
                 and a personal thank you. You’ll be added to our Backer member
@@ -270,9 +310,10 @@
               <div class="money">
                 <div>$</div>
                 <input type="text" class="input_amt" />
+                <div style="cursor: pointer" class="btn_submit">Continue</div>
               </div>
 
-              <div style="cursor: pointer" class="btn_submit">Continue</div>
+              <!-- <div style="cursor: pointer" class="btn_submit">Continue</div> -->
             </div>
           </section>
         </form>
