@@ -154,16 +154,16 @@ a {
   color: #7a7a7a;
 }
 
-.modal {
+.selection {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
 }
 
-.modal_1,
-.modal_2,
-.modal_3 {
+.selection_1,
+.selection_2,
+.selection_3 {
   height: 248px;
   width: 634px;
   border: 2px solid rgba(0, 0, 0, 0.15);
@@ -172,47 +172,47 @@ a {
   stroke: rgba(0, 0, 0, 0.15);
 }
 
-.modal_header_1,
-.modal_header_2,
-.modal_header_3 {
+.selection_header_1,
+.selection_header_2,
+.selection_header_3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
 }
 
-.modal_footer_1,
-.modal_footer_2,
-.modal_footer_3 {
+.selection_footer_1,
+.selection_footer_2,
+.selection_footer_3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 30px;
 }
 
-.modal_content_1,
-.modal_content_2,
-.modal_content_3 {
+.selection_content_1,
+.selection_content_2,
+.selection_content_3 {
   padding: 30px;
 }
 
-.modal_footer_left1,
-.modal_footer_left2,
-.modal_footer_left3 {
+.selection_footer_left1,
+.selection_footer_left2,
+.selection_footer_left3 {
   display: flex;
   flex-direction: row;
   padding: 30px;
   margin-top: -35px;
 }
 
-.modal_header_h1 {
+.selection_header_h1 {
   margin-top: -0.75rem;
   font-size: 2rem;
 }
 
-.modal_button1,
-.modal_button2,
-.modal_button3 {
+.selection_button1,
+.selection_button2,
+.selection_button3 {
   height: 48px;
   width: 157px;
   position: relative;
@@ -227,7 +227,67 @@ a {
   margin-top: 0.9rem;
 }
 
-.modal_button3 {
+.selection_button3 {
   background-color: #2f2f2f;
   opacity: 0.5;
+}
+
+/* Modal */
+.modal {
+  height: 1001px;
+  width: 730px;
+  background-color: #ffffff;
+  stroke: rgba(0, 0, 0, 0.0497);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal_content {
+  width: 634px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.modal_content:hover {
+  border: 3px solid #3cb3ab;
+}
+.modal_top {
+  height: 157px;
+}
+
+.line,
+.money_container {
+  /* display: none; */
+}
+
+.money_container /* .active */ {
+  display: flex;
+  flex-direction: row;
+  height: 96px;
+}
+
+.money {
+  display: flex;
+  flex-direction: row;
+}
+.input_amt {
+  height: 25%;
+}
+
+.btn_submit {
+  height: 48px;
+  width: 107px;
+  border-radius: 33.5px;
+  background-color: #3cb3ab;
+  color: #ffffff;
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Commissioner;
+  font-style: normal;
+  font-weight: bold;
 }
