@@ -69,8 +69,8 @@
         <article class="container container--2">
           <section class="backers">
             <div class="backers_amount">
-              <h1>$89,914</h1>
-              <p>of $100,000 backed</p>
+              <h1 class="currentVal">$89,914</h1>
+              <p class="maxVal">of $100,000 backed</p>
             </div>
 
             <div class="backers_total">
@@ -84,7 +84,9 @@
             </div>
           </section>
 
-          <section class="progress_bar">Progress Bar</section>
+          <section class="progress_bar">
+            <progress class='pBar'></progress>
+          </section>
         </article>
 
         <article class="container container--3">
@@ -127,7 +129,7 @@
                   <p>left</p>
                 </div>
                 <div
-                  class="selection_button1"
+                  class="selection_button1 select_btn"
                   style="cursor: pointer"
                   id="select_btn"
                 >
@@ -157,7 +159,7 @@
                 </div>
 
                 <div
-                  class="selection_button2"
+                  class="selection_button2 select_btn"
                   style="cursor: pointer"
                   id="select_btn"
                 >
@@ -184,7 +186,7 @@
                   <p>left</p>
                 </div>
                 <div
-                  class="selection_button3"
+                  class="selection_button3 select_btn"
                   style="cursor: pointer"
                   id="select_btn"
                 >
@@ -197,8 +199,11 @@
 
         <!-- Modal Section -->
         <!-- Modal Section -->
-
+        <div class="modalContainer">
         <form class="modal" id="modal">
+          <div class="close_container" style="cursor: pointer;">
+            <img src="/images/icon-close-modal.svg" alt="">
+          </div>
           <section class="modal_header">
             <h1>Back This Project</h1>
             <p>
@@ -343,6 +348,7 @@
             </div>
           </section>
         </form>
+      </div>
       </main>
     </div>
     <script src="/js/index.js"></script>
