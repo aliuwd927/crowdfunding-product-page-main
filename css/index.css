@@ -233,14 +233,14 @@ a {
 }
 
 /* Modal */
-.modalContainer{
+.modalContainer {
   width: 100vw;
   height: 100vh;
   display: none;
   position: fixed;
   left: 0;
   top: 0;
-  z-index:1;
+  z-index: 1;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -312,14 +312,9 @@ a {
   padding: 24px;
 }
 
-.line,
 .money_container {
-  /* display: none; */
-}
-
-.money_container /* .active */ {
   width: 578px;
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-between;
   margin-left: 4%;
@@ -359,6 +354,7 @@ a {
   font-weight: bold;
 }
 
-.modal_opaque, .selection_3 {
+.modal_opaque,
+.selection_3 {
   opacity: 0.5;
 }
