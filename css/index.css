@@ -233,7 +233,8 @@ a {
 }
 
 /* Modal */
-.modalContainer {
+.modalContainer,
+.modal_2_container {
   width: 100vw;
   height: 100vh;
   display: none;
@@ -245,7 +246,8 @@ a {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal {
+.modal,
+.modal_2 {
   width: 730px;
   background-color: #ffffff;
   stroke: rgba(0, 0, 0, 0.0497);
@@ -357,4 +359,15 @@ a {
 .modal_opaque,
 .selection_3 {
   opacity: 0.5;
+}
+
+.modal_2_chk_img {
+  background-image: url(/images/icon-check.svg);
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 90px;
+}
+.modal_2_paragraph {
+  padding: 105px;
+  text-align: center;
 }

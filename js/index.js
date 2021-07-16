@@ -33,24 +33,54 @@ const modalSubmitButtons = modalContainer.querySelectorAll(".btn_submit");
 for (const button of modalSubmitButtons) {
   button.addEventListener("click", (e) => {
     e.preventDefault();
-    const inputValues = modalContainer
-      .querySelectorAll("section")
-      .forEach((section) => {
-        console.log(section.querySelector("button"));
-      });
+    const inputValue = e.target
+      .closest("section")
+      .querySelector(".input_amt").value;
+    updateValue(inputValue);
+    updateBackers();
   });
 }
 
 const progressbar = document.querySelector(".pBar");
-const currentValue = 89914;
+let currentValue = 89914;
 const maxValue = 100000;
 
 progressbar.setAttribute("value", currentValue);
 progressbar.setAttribute("max", maxValue);
 
+function updateValue(inputValue) {
+  if (inputValue.match(/^\d+(\.\d+)?$/)) {
+    //updates the current value
+    currentValue += parseFloat(inputValue);
+    progressbar.setAttribute("value", currentValue);
+    //update backer amt innerHTML
+    document.querySelector(".current_val").innerHTML =
+      currentValue.toLocaleString();
+  } else {
+    alert("Please enter an amount");
+  }
+}
+
+const _modalTwo = document.querySelector(".modal_2_container");
+
+function updateBackers() {
+  //Update Backer Information
+  const endButton = _modalTwo.querySelector("button");
+  modalContainer.style.display = "none";
+  let currentBackers = document.querySelector(".backers_num").innerText;
+  //Convert to number remove comma.
+  console.log();
+  //End Modal
+  _modalTwo.style.display = "block";
+  endButton.addEventListener("click", endModalTwo);
+}
+
+function endModalTwo() {
+  _modalTwo.style.display = "none";
+}
 /* 
 
-- See an updated progress bar and total money raised based on their pledge total after confirming a pledge
+
 - See the number of total backers increment by one after confirming a pledge
 - Toggle whether or not the product is bookmarked
 
@@ -58,16 +88,9 @@ progressbar.setAttribute("max", maxValue);
 
 /* 
 
-P_G_: like querySelectorAll('section').forEach(section) { section.querySelector('button'); })
+Todo
 
-modalContainer.querySelectorAll('.class-of-a-section').forEach(section => {
-  // here 'section' is now the thing you work on
-  const button = section.querySelector('.my-button');
-  const input = section.querySelector('.my-input');
- 
-  // TODO: do something with it
-});
-
-
+After we hit continue, display another modal page
+backerstotal++
 
 */
