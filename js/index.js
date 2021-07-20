@@ -67,30 +67,15 @@ function updateBackers() {
   //Update Backer Information
   const endButton = _modalTwo.querySelector("button");
   modalContainer.style.display = "none";
-  let currentBackers = document.querySelector(".backers_num").innerText;
-  //Convert to number remove comma.
-  console.log();
   //End Modal
   _modalTwo.style.display = "block";
   endButton.addEventListener("click", endModalTwo);
 }
 
 function endModalTwo() {
+  let currentBackers = document.querySelector(".backers_num").innerText;
+  let number = parseFloat(currentBackers.replace(/,/g, ""));
+  number++;
+  document.querySelector(".backers_num").innerText = number.toLocaleString();
   _modalTwo.style.display = "none";
 }
-/* 
-
-
-- See the number of total backers increment by one after confirming a pledge
-- Toggle whether or not the product is bookmarked
-
-*/
-
-/* 
-
-Todo
-
-After we hit continue, display another modal page
-backerstotal++
-
-*/
